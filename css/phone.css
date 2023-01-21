@@ -1,0 +1,72 @@
+
+:root{
+    --background: linear-gradient(to right, #000428, #018ABD);
+    --fonttype:  'Roboto',sans-serif;
+    --titlefonttype: Verdana, 'sans-serif';
+    --titlecolor: #004581;
+    --backgroundall: #DDE8F0;
+    --subtitle: #F4D35E;
+
+}
+
+
+@media (max-width: 640px) { 
+    #landing{  
+        height: 60vh;
+    }
+
+    #overlay{
+       
+        height: 60vh;
+        
+    }
+
+    #landingpagewritten{
+        height: 60vh;
+    }
+
+    #getaprof{
+        
+        font-size: 1rem;
+       
+    }
+
+    .txt-type{
+        font-size: 2.5rem;
+        margin: 0 0.5rem;
+       
+    }
+
+    .circle {
+        
+    
+        
+        width: 35px; 
+        line-height: 40px; 
+        margin-top: 140px; 
+       
+    }
+   
+    .circle:before {position: absolute; 
+        width: 0; height: 140px;
+        display: block;
+        content: '';
+        left: 50%;
+        z-index: 1;
+        top: -140px;
+        margin-left: -1px;
+        opacity: 0.9;
+    
+    }
+    
+    
+    .circle:first-child:before {
+        display: none;
+    }
+
+    .recentwork{
+    
+        height: auto;
+    }
+
+ }

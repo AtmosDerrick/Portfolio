@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --background: linear-gradient(to right, #000428, #018ABD);
+    --fonttype:  'Roboto',sans-serif;
+    --titlefonttype: Verdana, 'sans-serif';
+    --titlecolor: #004581;
+    --backgroundall: #DDE8F0;
+    --subtitle: #F4D35E;
+
+}
+
+.body{
+    font-family: var(--fonttype);
+    background-color: var(--background);
+
+}
+
+#topnav{
+    background-image: var(--background);
+    height: 5vh;
+}
+
+.link:hover, #menuline:hover{
+    opacity: 0.7;
+}
+#brandname{
+    font-family: "Audiowide", sans-serif;
+
+}
+
+#landing{
+    transition: all 1s ease-in-out;
+    background-image: var(--background);
+
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background-image: var(--background);
+    z-index: 1;
+    opacity: 0.5;
+}
+
+
+#landingpagewritten{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+#getaprof{
+    font-family: "Sofia", cursive, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 3px 3px 3px #111111;
+    letter-spacing: 0.5rem;
+}
+
+.txt-type{
+    font-size: 3.5rem;
+    color: #F4D35E;
+    text-shadow: 1px 2px 2px #111111;
+
+}
+
+#menu{
+    
+    position: absolute;
+    z-index: 4;
+    height: 90vh;
+}
+
+#menu img{
+
+    width: 6rem;
+    border-radius: 50%;
+}
+
+#menutrans{
+    position: absolute;
+    height: 90vh;
+    z-index: 3;
+    opacity: 0.7;
+    background-color: #000428;
+}
+#links{
+    line-height: 2.5rem;
+    word-spacing: 0.25rem;
+}
+
+
+#menuslide{
+    transition: all 1s ease-in-out;
+    
+}
+
+.active{
+    margin-top: -2000px;
+    
+
+}
+
+.active1{
+    margin-top: 0;
+}
+
+.active2 {
+   
+    -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+    filter: blur(3px);
+  }
+
+ 
+
+
+.title{
+    font-family: var(--titlefonttype);
+    color: var(--titlecolor);
+}
+
+#about{
+    opacity: 0.9;
+}
+
+.line{
+    width: 20%;
+    height: 0.8rem;
+    border-bottom: 0.20rem solid var(--titlecolor);
+    opacity: 0.7;
+}
+
+.subtitle{
+    color: var(--subtitle);
+
+}
+
+@keyframes fromTop {
+    0% { height: 30rem; }
+    100% { height: 0rem; }
+  }
+
+  @keyframes fromDown {
+    0% { height: 0; }
+    100% { height: 30rem; }
+  }
+
+.servicecart{
+    transition: all 0.5s ease-in-out;
+    height: 30rem;
+    color: var(--titlecolor);
+}
+
+.servicecart{
+
+    animation: fromTop 0.5s;
+}
+
+.carticon{
+    
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-image: var(--background)
+}
+
+
+
+
+
+
+
+
+.servicecart:hover{
+    background-color: var(--titlecolor);
+    color: white;
+    animation: fromDown 1s; 
+
+
+    
+}
+
+
+.circle {position: relative;
+    
+    border-radius: 100%; 
+    width: 50px; 
+    line-height: 50px; 
+    text-align: center;
+    margin-top: 50px; 
+    z-index: 2;
+}
+.circle:first-child {
+    margin-top: 0;
+}
+.circle:before {position: absolute; 
+    border: 1px solid var(--titlecolor);
+    background-color: var(--titlecolor);
+    width: 0; height: 50px;
+    display: block;
+    content: '';
+    left: 50%;
+    z-index: 1;
+    top: -50px;
+    margin-left: -1px;
+    opacity: 0.9;
+
+}
+
+
+.circle:first-child:before {
+    display: none;
+}
+
+.skillcircle{
+    border-radius: 100%; 
+    width: 50px; 
+    line-height: 50px; 
+    text-align: center;
+    
+}
+
+.skill{
+    background-color: var(--background);
+}
+
+.recentwork{
+    
+    height: 45rem;
+    background-image: linear-gradient(to right, #000428, #018ABD);
+}
+
+
+
+.dots{
+    height: 10px;
+    width: 10px;
+    /* background-color: white; */
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.parallelogram {
+    transition: all 0.2s ease-in-out;
+	width: 15rem;
+	height: 3rem;
+	background: var(--titlecolor);
+    color: var(--subtitle);
+    cursor: pointer;
+    border-radius: 5rem;
+}
+
+.parallelogram:hover{
+    box-shadow: 1px 1px 5px rgb(53, 53, 53);
+}
+
+
+/* webactive */
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;} 
+ }  
+
+ 
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;} 
+ } 
+
+.generaldisplay{
+    animation: fadeIn 1s;
+}
+
+.displayactive{
+    animation: fadeOut 1s;
+}
+
+
+.contactinsideicon{
+    border-bottom: 3px solid rgb(193, 193, 193);
+
+}
+
+.contantcart{
+    border-bottom: 4px solid var(--titlecolor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
